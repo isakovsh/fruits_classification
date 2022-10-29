@@ -2,8 +2,11 @@ from json import load
 import streamlit as st
 import fastai 
 import pathlib
+import platform
 import plotly.express as px 
-temp=pathlib.PosixPath
+
+plt=platform.system()
+if plt == 'Linux': pathlib.WindowsPath=pathlib.PosixPath
 
 
 st.title("Mevalarni klassificatsiya qiluvchi model ")

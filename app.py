@@ -1,6 +1,6 @@
 from json import load
 import streamlit as st
-import fastai 
+import fastai.vision.all import * 
 import pathlib
 import platform
 import plotly.express as px 
